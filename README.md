@@ -11,6 +11,7 @@ INSTALL:
       * python
       * python-pip
       * python-virtualenv
+      * curl (if you want to test from the command line)
   2. create dir
       ~~~~
       mkdir vicpig
