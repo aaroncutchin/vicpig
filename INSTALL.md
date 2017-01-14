@@ -5,10 +5,12 @@ Aaron's Pig Latin Translation Microservice
 This will host the app at http://localhost:5000/translate
 
 1. System Prerequisites
-        * python
-        * python-pip
-        * python-virtualenv
-        * curl (if you want to test from the command line)
+
+  * python
+  * python-pip
+  * python-virtualenv
+  * curl (if you want to test from the command line)
+
 2. create dir
 
         mkdir vicpig
@@ -57,7 +59,7 @@ Pretty much everything here must be done as root, so you might as well just 'sud
         . venv/bin/activate
         git clone https://github.com/aaroncutchin/vicpig.git
         pip install -r vicpig/requirements.txt
-        chown -R www-data:www-data 
+        chown -R www-data:www-data  /var/www/html/vicpig
 
 3. create nginx site config file (/etc/nginx/sites-available/vicpig.conf):
 
