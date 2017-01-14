@@ -49,7 +49,7 @@ Pretty much everything here must be done as root, so you might as well just 'sud
 
 1. Install system packages
 
-        python python-pip python-virtualenv libpython2.7-dev nginx
+        apt-get install python python-pip python-virtualenv libpython2.7-dev nginx
 
 2. prepare application dir
 
