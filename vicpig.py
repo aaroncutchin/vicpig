@@ -11,6 +11,7 @@ VOWELS = 'aeiouAEIOU'
 LETTERS = CONSONANTS + VOWELS
 
 @app.route( '/translate/', methods=['GET'] )
+@app.route( '/translate', methods=['GET'] )
 @flask_nicely.nice_json
 def translate():
 	message = request.args.get('msg')
