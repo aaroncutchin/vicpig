@@ -101,3 +101,10 @@ Pretty much everything here must be done as root, so you might as well just 'sud
       http://<system_hostname_or_ip_address>/translate/?msg=foo
       ----
 
+
+
+UNIT TESTS:
+
+You can run unit tests by invoking the virtual environment as above, and executing pytest.
+
+

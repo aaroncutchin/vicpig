@@ -21,15 +21,9 @@ You can test the app with various curl command like:
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=Sentences with commas, oxford commas, and periods.'
       ```
 
-You can also put text in a plain text file (file.txt), and translate it with the following curl command:
+You can also put text in a plain text file (file.txt), and translate it with the following curl command. This would be useful for multi-sentence or multi-paragraph text.
 
       ```
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg@file.txt'
       ```
-
-
-UNIT TESTS:
-
-You can run unit tests by invoking the virtual environment as above, and executing pytest.
-
 
