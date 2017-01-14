@@ -12,12 +12,12 @@ You can test the app with various curl command like:
       ```
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=Hello, world!'
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=numbers like 15'
-      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=posessives like Alan\'s'
+      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=possessives like Alan\'s'
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=Capitalized Words'
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=ALL CAPS'
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg="quoted strings"'
-      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg="quotes", followed my commas'
-      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg="commas", followed my quotes'
+      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg="quotes", followed by commas'
+      curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg="commas", followed by quotes'
       curl -G 'http://localhost:5000/translate/' --data-urlencode 'msg=Sentences with commas, oxford commas, and periods.'
       ```
 
