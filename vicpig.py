@@ -80,11 +80,18 @@ def pigify_word( word ):
 
 	## PIG-LATINIZE THE WORD
 	if word[0] in CONSONANTS:
-		pigified_word = word[1:] + word[0].lower() + 'ay'
+		lead_consonants = ''
+		for char in word:
+			if char in VOWELS:
+				break
+			else:
+				lead_consonants += char
+		pigified_word = word.lstrip(lead_consonants) + lead_consonants.lower() + 'ay'
 	elif word[0] in VOWELS:
 		pigified_word = word + 'yay'
 	else:
 		pigified_word = word
+
 
 	## RE-CAPITALIZE
 	if all_caps:
